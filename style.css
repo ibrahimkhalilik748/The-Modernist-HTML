@@ -1,0 +1,249 @@
+/* ========================================================================
+    Common CSS 
+========================================================================= */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Georgia, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.link_btn{
+    color: #fff;
+    background-color: #76C38F;
+    padding: 10px 20px;
+    border-radius:10px
+}
+
+/* ========================================================================
+    Header CSS 
+========================================================================= */
+
+header{
+    width: 100%;
+    border-top: 5px solid #76C38F;
+    background-color: #290000;
+    color: #fff;
+}
+header ul{
+    text-align: right;
+    width: 100%;
+    margin-bottom: 0px;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0px 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+header ul li a:hover{
+    color: #fff;
+    background-color: #76C38F;
+    border-radius: 10px;
+    /* transition: 0.5s; */
+}
+header .text_area{
+    margin-top: 30px;
+    margin-left: 110px;
+}
+header .text_area h1{
+    font-size:46px;
+}
+header .text_area p{
+    font-size:14px;
+    color: #979797;
+}
+header .slide .img{
+    margin: 0 auto;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 10px solid #6B6B6B;
+    overflow: hidden;
+}
+
+/* ========================================================================
+    Body CSS 
+========================================================================= */
+
+#body_area{
+    width: 100%;
+    margin: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #660000;
+}
+#body_area .service_area{
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-gap: 44px;
+}
+#body_area .service_area .box{
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+}
+#body_area .service_area .box h2{
+    color: #333333;
+    font-size: 32px;
+    margin-top: 10px;
+}
+#body_area .service_area .box p{
+    color: #979797;
+    font-size: 14px;
+}
+#body_area .service_area .box:hover{
+    color: #fff;
+    background-color: #76C38F;
+}
+#body_area .service_area .box:hover h2{
+    color: #fff;
+    background-color: #76C38F;
+}
+#body_area .service_area .box:hover p{
+    color: #fff;
+}
+#body_area .middle_text{
+    text-align: center;
+    display: block;
+}
+#body_area .middle_text h2{
+    color: #fff;
+    background-color: #303030;
+    display: inline-block;
+    font-size: 32px;
+    padding:10px 20px;
+    margin: 100px;
+}
+
+
+
+
+.works{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 123px;
+}
+.works .work{
+    border: 5px solid #fff;
+    position: relative;
+}
+.works .work p{
+    position: absolute;
+    bottom: -16px;
+    text-align: center;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    font-weight: 600;
+}
+.works .work:hover{
+    border: 5px solid #76C38F;
+}
+.works .work:hover p {
+    display:none;
+    /* transition: 0.9s; */
+}
+
+
+
+
+#footer{
+    width: 100%;
+    background-color: #303030;
+    color: #ffffff;
+}
+#footer a{
+    color: #76c38f;
+}
+#footer .box-2 p{
+    padding-top: 0px;
+    margin-top: 0px;
+    padding: 3px;
+    border-bottom: 1px solid #8080806b;
+    font-size: 14px;
+}
+#footer .box-3 p{
+    font-size: 14px;
+    line-height: 1.2em;
+}
+#footer h4{
+    padding-top: 30px;
+}
+#footer .box-4 form{
+    width: 100%;
+}
+#footer .box-4 form input{
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 10px;
+    padding: 5px 15px;
+
+}
+#footer .box-4 form input[type="submit"] {
+    width: 90px;
+    border: none;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: #76c38f;
+    color: #fff;
+    margin-top: 10px;
+    padding: 5px 15px;
+
+}
+#footer .box-4 form textarea{
+    width: 100%;
+    height: 100px;
+    border: none;
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 10px;
+    padding: 5px 15px;
+}
+
+
+#footer .copyright{
+    width: 100%;
+    height: 50px;
+    background-color: #2B2B2B;
+    color: #979797;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    #profile_area{
+        height: auto;
+    }
+    .copyright{
+        height: 100%;
+    }
+    .copyright p{
+        text-align: center;
+    }
+    #main_menu{
+        overflow: hidden;
+    }
+    .social_logo{
+        display: none;
+    }
+  }
