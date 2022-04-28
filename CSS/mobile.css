@@ -145,3 +145,13 @@
         font-size: 14px;
     }
   }
+
+  @media only screen and (max-width: 360px){
+    .link_btn {
+        color: #fff;
+        background-color: #76C38F;
+        padding: 10px 10px;
+        border-radius: 10px;
+        font-size: 8px;
+    }
+  }
